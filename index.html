@@ -8,112 +8,193 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <nav class="nav">
-      <a href="#inicio" class="nav-active">Guia Policial</a>
-      <a href="#carreiras">Carreiras</a>
-      <a href="#ingresso">Ingresso</a>
-      <a href="#faculdades">ENEM</a>
-      <a href="#concursos">Concursos</a>
-      <a href="#comunidade">Comunidade</a>
+      <a href="#" class="logo">Guia Policial</a>
+      <div class="nav-tabs">
+        <a href="#carreiras" class="tab active" data-tab="carreiras">Carreiras</a>
+        <a href="#ingresso" class="tab" data-tab="ingresso">Ingresso</a>
+        <a href="#preparacao" class="tab" data-tab="preparacao">Preparação</a>
+        <a href="#concursos" class="tab" data-tab="concursos">Concursos</a>
+        <a href="#comunidade" class="tab" data-tab="comunidade">Comunidade</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="hero-content">
+    <section class="hero">
+      <div class="hero-inner">
         <h1>Carreiras Policiais</h1>
-        <p>Tudo sobre PM, PC, PF, PRF, Policial Penal e Perícia</p>
-        <a href="#carreiras" class="btn">Ver Carreiras</a>
+        <p>Guia completo: requisitos, concursos, ENEM e preparação</p>
       </div>
     </section>
 
-    <!-- CARREIRAS -->
-    <section id="carreiras" class="section">
+    <!-- ABA 1: CARREIRAS -->
+    <section id="carreiras" class="tab-panel active">
       <div class="container">
-        <h2>Carreiras</h2>
-        <div class="cards" id="careers-grid">
-          <!-- Cards via JS -->
+        <div class="section-header">
+          <h2>Carreiras Policiais</h2>
+          <p>Principais funções e requisitos básicos</p>
+        </div>
+        <div class="cards-grid" id="careers-grid"></div>
+      </div>
+    </section>
+
+    <!-- ABA 2: INGRESSO -->
+    <section id="ingresso" class="tab-panel">
+      <div class="container">
+        <div class="section-header">
+          <h2>Etapas de Ingresso</h2>
+          <p>Passo a passo comum a todos os concursos</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <div class="step-info">
+              <h4>Provas Objetivas</h4>
+              <p>Português, Lógico, Direitos, Legislação</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <div class="step-info">
+              <h4>Teste Físico</h4>
+              <p>Corrida, flexão, barra, abdominal</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <div class="step-info">
+              <h4>Exames Médicos</h4>
+              <p>Saúde + psicológico + social</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <div class="step-info">
+              <h4>Curso de Formação</h4>
+              <p>Academia de polícia</p>
+            </div>
+          </div>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit">
+            <div>💰</div>
+            <div>R$5.000 - R$15.000 iniciais</div>
+          </div>
+          <div class="benefit">
+            <div>🛡️</div>
+            <div>Estabilidade após 3 anos</div>
+          </div>
+          <div class="benefit">
+            <div>🏥</div>
+            <div>Adicional periculosidade</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- INGRESSO -->
-    <section id="ingresso" class="section alt">
+    <!-- ABA 3: PREPARAÇÃO -->
+    <section id="preparacao" class="tab-panel">
       <div class="container">
-        <h2>Como Entrar</h2>
-        <div class="steps">
-          <div class="step">📝 Provas objetivas</div>
-          <div class="step">🏃‍♂️ Teste físico</div>
-          <div class="step">🩺 Exames médicos</div>
-          <div class="step">🎓 Formação</div>
+        <div class="section-header">
+          <h2>Preparação</h2>
+          <p>Faculdades, ENEM e dicas de estudo</p>
         </div>
-        <div class="benefits">
-          <div>💰 Salário R$5k-R$15k</div>
-          <div>🛡️ Estabilidade</div>
-          <div>🏥 Plano de saúde</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FACULDADES/ENEM -->
-    <section id="faculdades" class="section">
-      <div class="container">
-        <h2>ENEM + Faculdades</h2>
-        <div class="grid">
-          <div>📚 Direito (Delegado)</div>
-          <div>🔒 Segurança Pública</div>
-          <div>🧬 Perícia Criminal</div>
-          <div>💻 TI (cibersegurança)</div>
-        </div>
-        <div class="note">Nota ENEM 650+ para Sisu/Prouni</div>
-      </div>
-    </section>
-
-    <!-- CONCURSOS -->
-    <section id="concursos" class="section alt">
-      <div class="container">
-        <h2>Principais Bancas</h2>
-        <div class="bancas">
-          <div>Cebraspe (PF/PRF)</div>
-          <div>FGV (PM/PC)</div>
-          <div>Vunesp (SP)</div>
+        <div class="preparacao-grid">
+          <div class="preparacao-card">
+            <h4>📚 ENEM + Sisu</h4>
+            <p>Nota 650+ para Direito/Segurança Pública</p>
+          </div>
+          <div class="preparacao-card">
+            <h4>🎓 Graduações</h4>
+            <p>Direito, Segurança Pública, Perícia</p>
+          </div>
+          <div class="preparacao-card">
+            <h4>📖 Matérias</h4>
+            <p>Português (30%), Direitos (40%)</p>
+          </div>
+          <div class="preparacao-card">
+            <h4>🏃‍♂️ TAF</h4>
+            <p>Treino 6x/semana, 3 meses antes</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- COMUNIDADE -->
-    <section id="comunidade" class="section">
+    <!-- ABA 4: CONCURSOS -->
+    <section id="concursos" class="tab-panel">
       <div class="container">
-        <div class="tabs">
-          <button class="tab active" data-tab="comments">Comentários</button>
-          <button class="tab" data-tab="questions">Dúvidas</button>
+        <div class="section-header">
+          <h2>Concursos e Bancas</h2>
+          <p>Principais organizadoras por carreira</p>
+        </div>
+        <div class="bancas-grid">
+          <div class="banca">
+            <h4>Cebraspe</h4>
+            <p>PF • PRF • PC-DF</p>
+          </div>
+          <div class="banca">
+            <h4>FGV</h4>
+            <p>PM-SP • PC-RJ • PM-MG</p>
+          </div>
+          <div class="banca">
+            <h4>Vunesp</h4>
+            <p>PC-SP • PM-SP</p>
+          </div>
+          <div class="banca">
+            <h4>Outras</h4>
+            <p>IBFC • FCC • AOCP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA 5: COMUNIDADE -->
+    <section id="comunidade" class="tab-panel">
+      <div class="container">
+        <div class="section-header">
+          <h2>Comunidade</h2>
+          <p>Compartilhe experiências e dúvidas</p>
+        </div>
+        
+        <!-- SUB-ABAS -->
+        <div class="sub-tabs">
+          <button class="sub-tab active" data-subtab="comments">Comentários</button>
+          <button class="sub-tab" data-subtab="duvidas">Dúvidas</button>
         </div>
 
         <!-- COMENTÁRIOS -->
-        <div id="comments-tab" class="tab-content active">
-          <form id="comment-form">
-            <input type="text" id="nome" placeholder="Nome" required>
-            <select id="carreira">
-              <option>PM</option><option>PC</option><option>PF</option><option>PRF</option>
-            </select>
-            <textarea id="msg" placeholder="Seu comentário..." required></textarea>
-            <button type="submit">Enviar</button>
+        <div id="comments-subtab" class="subtab-content active">
+          <form id="comment-form" class="form-compact">
+            <div class="form-row">
+              <input type="text" id="nome" placeholder="Nome">
+              <select id="carreira">
+                <option>PM</option><option>PC</option><option>PF</option><option>PRF</option>
+              </select>
+            </div>
+            <textarea id="msg" placeholder="Seu comentário..."></textarea>
+            <button type="submit">Publicar</button>
           </form>
-          <div id="comments-list"></div>
+          <div id="comments-list" class="posts"></div>
         </div>
 
         <!-- DÚVIDAS -->
-        <div id="questions-tab" class="tab-content">
-          <form id="question-form">
-            <textarea id="pergunta" placeholder="Sua dúvida..." required></textarea>
+        <div id="duvidas-subtab" class="subtab-content">
+          <form id="duvida-form" class="form-compact">
+            <textarea id="duvida" placeholder="Sua dúvida..."></textarea>
             <button type="submit">Enviar</button>
           </form>
-          <div id="questions-list"></div>
+          <div id="duvidas-list" class="posts"></div>
         </div>
       </div>
     </section>
+
+    <!-- DIVISÓRIAS -->
+    <div class="divider"></div>
+    <div class="divider last"></div>
   </main>
 
   <script src="script.js"></script>
