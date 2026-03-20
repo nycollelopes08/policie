@@ -3,281 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guia das Carreiras Policiais | Profissional & Completo</title>
+  <title>Guia Policial</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- LOADING SCREEN -->
-  <div id="loader" class="loader">
-    <div class="loader-content">
-      <div class="loader-icon">
-        <i class="fas fa-shield-alt"></i>
-      </div>
-      <p>Carregando Guia Policial...</p>
-    </div>
-  </div>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-container">
-      <div class="logo">
-        <i class="fas fa-shield-alt"></i>
-        <span>Guia Policial</span>
-      </div>
-      <nav class="nav">
-        <a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Início</a>
-        <a href="#carreiras" class="nav-link"><i class="fas fa-users"></i> Carreiras</a>
-        <a href="#ingresso" class="nav-link"><i class="fas fa-clipboard-check"></i> Ingresso</a>
-        <a href="#faculdades" class="nav-link"><i class="fas fa-graduation-cap"></i> Faculdades</a>
-        <a href="#concursos" class="nav-link"><i class="fas fa-trophy"></i> Concursos</a>
-        <a href="#interacao" class="nav-link"><i class="fas fa-comments"></i> Interação</a>
-      </nav>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <header>
+    <nav class="nav">
+      <a href="#inicio" class="nav-active">Guia Policial</a>
+      <a href="#carreiras">Carreiras</a>
+      <a href="#ingresso">Ingresso</a>
+      <a href="#faculdades">ENEM</a>
+      <a href="#concursos">Concursos</a>
+      <a href="#comunidade">Comunidade</a>
+    </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <div class="badge">Atualizado 2026</div>
-        <h1 class="hero-title">Guia Completo das<br><span class="gradient-text">Carreiras Policiais</span></h1>
-        <p class="hero-subtitle">Todas as informações sobre Polícia Militar, Civil, Federal, PRF, Policial Penal e Perícia. Requisitos, concursos, ENEM, faculdades e muito mais.</p>
-        <div class="hero-buttons">
-          <a href="#carreiras" class="btn btn-primary">
-            <i class="fas fa-rocket"></i> Explorar Carreiras
-          </a>
-          <a href="#interacao" class="btn btn-secondary">
-            <i class="fas fa-comments"></i> Tirar Dúvidas
-          </a>
-        </div>
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Carreiras Policiais</h1>
+        <p>Tudo sobre PM, PC, PF, PRF, Policial Penal e Perícia</p>
+        <a href="#carreiras" class="btn">Ver Carreiras</a>
       </div>
-      <div class="hero-visual">
-        <div class="hero-image">
-          <img src="https://images.pexels.com/photos/14642359/pexels-photo-14642359.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Polícia em ação">
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <div class="stat-number">+25</div>
-            <div class="stat-label">Carreiras</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+50</div>
-            <div class="stat-label">Bancas</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">2026</div>
-            <div class="stat-label">Atualizado</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CARREIRAS -->
-  <section id="carreiras" class="section careers">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Principais Carreiras Policiais</h2>
-        <p class="section-subtitle">Conheça cada uma das principais carreiras policiais no Brasil, suas atribuições e requisitos básicos</p>
+    <!-- CARREIRAS -->
+    <section id="carreiras" class="section">
+      <div class="container">
+        <h2>Carreiras</h2>
+        <div class="cards" id="careers-grid">
+          <!-- Cards via JS -->
+        </div>
       </div>
-      <div class="careers-grid" id="careers-grid">
-        <!-- Cards carregados via JS para animação -->
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- INGRESSO -->
-  <section id="ingresso" class="section ingress">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Como Ingressar</h2>
-        <p class="section-subtitle">Etapas, requisitos e benefícios de cada carreira policial</p>
-      </div>
-      <div class="ingress-content">
-        <div class="ingress-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h4>Provas Objetivas</h4>
-              <p>Português, Raciocínio Lógico, Informática, Direitos e Legislação</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h4>Teste de Aptidão Física</h4>
-              <p>Corrida, flexões, barra, abdominal e natação</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h4>Exames Médicos e Psicológicos</h4>
-              <p>Avaliação completa de saúde e aptidão mental</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h4>Curso de Formação</h4>
-              <p>Academia de polícia com treinamento prático</p>
-            </div>
-          </div>
+    <!-- INGRESSO -->
+    <section id="ingresso" class="section alt">
+      <div class="container">
+        <h2>Como Entrar</h2>
+        <div class="steps">
+          <div class="step">📝 Provas objetivas</div>
+          <div class="step">🏃‍♂️ Teste físico</div>
+          <div class="step">🩺 Exames médicos</div>
+          <div class="step">🎓 Formação</div>
         </div>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <i class="fas fa-dollar-sign"></i>
-            <h4>Salários Iniciais</h4>
-            <p>R$ 5.000 a R$ 15.000+ dependendo do cargo e estado</p>
-          </div>
-          <div class="benefit-card">
-            <i class="fas fa-shield-check"></i>
-            <h4>Estabilidade</h4>
-            <p>Após 3 anos de estágio probatório</p>
-          </div>
-          <div class="benefit-card">
-            <i class="fas fa-heartbeat"></i>
-            <h4>Benefícios</h4>
-            <p>Adicional de periculosidade, insalubridade, plano de saúde</p>
-          </div>
+        <div class="benefits">
+          <div>💰 Salário R$5k-R$15k</div>
+          <div>🛡️ Estabilidade</div>
+          <div>🏥 Plano de saúde</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FACULDADES -->
-  <section id="faculdades" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Formação Acadêmica</h2>
-        <p class="section-subtitle">Graduações, tecnólogos e como o ENEM ajuda na carreira policial</p>
+    <!-- FACULDADES/ENEM -->
+    <section id="faculdades" class="section">
+      <div class="container">
+        <h2>ENEM + Faculdades</h2>
+        <div class="grid">
+          <div>📚 Direito (Delegado)</div>
+          <div>🔒 Segurança Pública</div>
+          <div>🧬 Perícia Criminal</div>
+          <div>💻 TI (cibersegurança)</div>
+        </div>
+        <div class="note">Nota ENEM 650+ para Sisu/Prouni</div>
       </div>
-      <div class="faculdades-grid">
-        <div class="faculdade-card">
-          <h4><i class="fas fa-gavel"></i> Direito</h4>
-          <p>Essencial para Delegado e carreiras jurídicas</p>
-        </div>
-        <div class="faculdade-card">
-          <h4><i class="fas fa-brain"></i> Segurança Pública</h4>
-          <p>Tecnólogo ou Bacharelado - mais procurado</p>
-        </div>
-        <div class="faculdade-card">
-          <h4><i class="fas fa-dna"></i> Perícia Criminal</h4>
-          <p>Para Peritos e Investigadores Científicos</p>
-        </div>
-        <div class="faculdade-card">
-          <h4><i class="fas fa-laptop"></i> Informática</h4>
-          <p>Crimes cibernéticos e inteligência</p>
-        </div>
-      </div>
-      <div class="enem-box">
-        <h4><i class="fas fa-chart-line"></i> ENEM na Carreira Policial</h4>
-        <p>Use a nota do ENEM no Sisu/Prouni para graduações exigidas nos concursos. Notas de corte em faculdades públicas variam de 650 a 800 pontos dependendo do curso e estado.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONCURSOS -->
-  <section id="concursos" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Concursos e Bancas</h2>
-        <p class="section-subtitle">Principais bancas organizadoras e como se preparar</p>
-      </div>
-      <div class="bancas-grid">
-        <div class="banca-card">
-          <div class="banca-logo cebraspe">Cebraspe</div>
-          <p>PF, PRF, PC-DF, PC-GO</p>
-        </div>
-        <div class="banca-card">
-          <div class="banca-logo fgv">FGV</div>
-          <p>PM-SP, PC-RJ, PM-MG</p>
-        </div>
-        <div class="banca-card">
-          <div class="banca-logo vunesp">Vunesp</div>
-          <p>PC-SP, PM-SP</p>
+    <!-- CONCURSOS -->
+    <section id="concursos" class="section alt">
+      <div class="container">
+        <h2>Principais Bancas</h2>
+        <div class="bancas">
+          <div>Cebraspe (PF/PRF)</div>
+          <div>FGV (PM/PC)</div>
+          <div>Vunesp (SP)</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- INTERAÇÃO -->
-  <section id="interacao" class="section interaction">
-    <div class="container">
-      <div class="interaction-tabs">
-        <button class="tab-btn active" data-tab="comments">
-          <i class="fas fa-comments"></i> Comentários
-        </button>
-        <button class="tab-btn" data-tab="questions">
-          <i class="fas fa-question-circle"></i> Dúvidas
-        </button>
-      </div>
-      
-      <!-- COMENTÁRIOS -->
-      <div id="comments-tab" class="tab-content active">
-        <form id="comment-form" class="interaction-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label><i class="fas fa-user"></i> Nome</label>
-              <input type="text" id="nome" required>
-            </div>
-            <div class="form-group">
-              <label><i class="fas fa-tag"></i> Carreira</label>
-              <select id="carreira">
-                <option value="Geral">Geral</option>
-                <option value="PM">Polícia Militar</option>
-                <option value="PC">Polícia Civil</option>
-                <option value="PF">Polícia Federal</option>
-                <option value="PRF">PRF</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label><i class="fas fa-comment"></i> Seu comentário</label>
-            <textarea id="mensagem" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Publicar
-          </button>
-        </form>
-        <div id="comments-list" class="comments-container"></div>
-      </div>
-
-      <!-- DÚVIDAS -->
-      <div id="questions-tab" class="tab-content">
-        <form id="question-form" class="interaction-form">
-          <div class="form-group">
-            <label><i class="fas fa-question"></i> Sua dúvida</label>
-            <textarea id="pergunta" rows="3" required placeholder="Ex: Qual a altura mínima para PM?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Enviar
-          </button>
-        </form>
-        <div id="questions-list" class="comments-container"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <i class="fas fa-shield-alt"></i>
-          <span>Guia Policial</span>
+    <!-- COMUNIDADE -->
+    <section id="comunidade" class="section">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab active" data-tab="comments">Comentários</button>
+          <button class="tab" data-tab="questions">Dúvidas</button>
         </div>
-        <p>© 2026 - Conteúdo informativo. Consulte sempre editais oficiais.</p>
+
+        <!-- COMENTÁRIOS -->
+        <div id="comments-tab" class="tab-content active">
+          <form id="comment-form">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <select id="carreira">
+              <option>PM</option><option>PC</option><option>PF</option><option>PRF</option>
+            </select>
+            <textarea id="msg" placeholder="Seu comentário..." required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+          <div id="comments-list"></div>
+        </div>
+
+        <!-- DÚVIDAS -->
+        <div id="questions-tab" class="tab-content">
+          <form id="question-form">
+            <textarea id="pergunta" placeholder="Sua dúvida..." required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+          <div id="questions-list"></div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
