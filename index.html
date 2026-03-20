@@ -1,270 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Guia das Carreiras Policiais</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia das Carreiras Policiais | Profissional & Completo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-icon">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <p>Carregando Guia Policial...</p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
   <header class="header">
-    <div class="logo">Guia das <span>Carreiras Policiais</span></div>
-    <nav class="nav">
-      <a href="#inicio">Início</a>
-      <a href="#tipos-carreiras">Carreiras</a>
-      <a href="#ingresso">Formas de Ingresso</a>
-      <a href="#faculdades">Faculdades & ENEM</a>
-      <a href="#concursos">Concursos</a>
-      <a href="#comentarios">Comentários</a>
-      <a href="#faq">Dúvidas</a>
-    </nav>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-shield-alt"></i>
+        <span>Guia Policial</span>
+      </div>
+      <nav class="nav">
+        <a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Início</a>
+        <a href="#carreiras" class="nav-link"><i class="fas fa-users"></i> Carreiras</a>
+        <a href="#ingresso" class="nav-link"><i class="fas fa-clipboard-check"></i> Ingresso</a>
+        <a href="#faculdades" class="nav-link"><i class="fas fa-graduation-cap"></i> Faculdades</a>
+        <a href="#concursos" class="nav-link"><i class="fas fa-trophy"></i> Concursos</a>
+        <a href="#interacao" class="nav-link"><i class="fas fa-comments"></i> Interação</a>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <!-- INÍCIO -->
-    <section id="inicio" class="hero">
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
       <div class="hero-text">
-        <h1>Entenda as Carreiras Policiais no Brasil</h1>
-        <p>
-          Conheça as principais áreas policiais, requisitos, formas de ingresso, faculdades, uso do ENEM e os concursos mais cobrados em um só lugar.
-        </p>
-        <a href="#tipos-carreiras" class="btn-primary">Começar agora</a>
-      </div>
-      <div class="hero-img">
-        <!-- Imagem ilustrativa de fundo via CSS -->
-      </div>
-    </section>
-
-    <!-- TIPOS DE CARREIRA -->
-    <section id="tipos-carreiras" class="section">
-      <h2>Principais Carreiras Policiais</h2>
-      <div class="cards-grid">
-
-        <article class="card">
-          <img src="https://images.pexels.com/photos/14642351/pexels-photo-14642351.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Polícia Militar em patrulhamento" />
-          <h3>Polícia Militar (PM)</h3>
-          <p>
-            A Polícia Militar atua na **segurança** ostensiva, patrulhamento das ruas, controle de distúrbios e prevenção de crimes, sendo responsável pelo policiamento fardado nos estados.[web:2][web:4]
-          </p>
-          <ul>
-            <li>Cargos comuns: Soldado, Cabo, Sargento, Oficial.[web:4]</li>
-            <li>Escolaridade: em muitos estados, soldado exige ensino médio; oficiais costumam exigir nível superior.[web:2][web:5]</li>
-            <li>Ingresso: concurso estadual, provas objetivas, TAF, exames médicos, avaliação psicológica e investigação social.[web:2][web:5]</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <img src="https://images.pexels.com/photos/14642343/pexels-photo-14642343.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Polícia Civil em investigação" />
-          <h3>Polícia Civil (PC)</h3>
-          <p>
-            A Polícia Civil é responsável pela investigação de crimes, apuração de autoria e materialidade, condução de inquéritos e apoio ao Ministério Público.[web:1][web:8]
-          </p>
-          <ul>
-            <li>Cargos: Investigador, Escrivão, Delegado, Papiloscopista, Perito, Auxiliar de perícia.[web:1][web:4]</li>
-            <li>Escolaridade: em geral nível superior; Delegado exige Direito.[web:1][web:8]</li>
-            <li>Ingresso: concurso estadual com provas, TAF, exames médicos e investigação social.[web:8]</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <img src="https://images.pexels.com/photos/14642359/pexels-photo-14642359.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Polícia Federal em operação" />
-          <h3>Polícia Federal (PF)</h3>
-          <p>
-            A Polícia Federal atua no combate a crimes contra a União, tráfico internacional, crimes financeiros, fronteiras, imigração e crimes cibernéticos.[web:1][web:10]
-          </p>
-          <ul>
-            <li>Cargos: Agente, Escrivão, Delegado, Perito Criminal, Papiloscopista.[web:1][web:10]</li>
-            <li>Nível superior em qualquer área para agente/escrivão; Direito para Delegado; áreas específicas para Perito.[web:1][web:10]</li>
-            <li>Ingresso: concurso federal, provas, TAF, exames médicos, psicológicos e curso de formação na ANP.[web:1]</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <img src="https://images.pexels.com/photos/10546577/pexels-photo-10546577.jpeg?auto=compress&cs=tinysrgb&w=800" alt="PRF em rodovia" />
-          <h3>Polícia Rodoviária Federal (PRF)</h3>
-          <p>
-            A PRF fiscaliza e patrulha rodovias federais, combate crimes nas estradas e atua em acidentes e operações especiais.[web:1][web:4]
-          </p>
-          <ul>
-            <li>Cargo principal: Policial Rodoviário Federal.[web:4]</li>
-            <li>Exige nível superior em qualquer área e CNH categoria B ou superior.[web:1]</li>
-            <li>Concurso federal com provas, TAF, exames médicos, psicológicos e curso de formação.[web:1]</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <img src="https://images.pexels.com/photos/22220259/pexels-photo-22220259.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sistema prisional" />
-          <h3>Policial Penal</h3>
-          <p>
-            O Policial Penal é responsável pela segurança de presídios, escolta de detentos e manutenção da ordem em estabelecimentos penais.[web:4][web:7]
-          </p>
-          <ul>
-            <li>Órgãos: sistemas penitenciários estaduais e federal.[web:7]</li>
-            <li>Escolaridade: geralmente nível médio ou superior, conforme o estado.[web:7]</li>
-            <li>Ingresso: concurso público com provas, TAF e exames de saúde.[web:7]</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <img src="https://images.pexels.com/photos/14025776/pexels-photo-14025776.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Perícia criminal" />
-          <h3>Perícia Oficial</h3>
-          <p>
-            Peritos e auxiliares de perícia realizam análises técnico-científicas em locais de crime, laboratórios e institutos de criminalística.[web:4][web:7]
-          </p>
-          <ul>
-            <li>Cargos: Perito Criminal, Médico Legista, Auxiliar de Perícia.[web:4]</li>
-            <li>Formação: geralmente nível superior em áreas específicas (Direito, Biologia, Engenharias, Medicina, etc.).[web:4]</li>
-            <li>Ingresso: concurso com forte cobrança em disciplinas específicas e prova de títulos em alguns casos.[web:4]</li>
-          </ul>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- FORMAS DE INGRESSO -->
-    <section id="ingresso" class="section section-alt">
-      <h2>Formas de Ingresso, Benefícios e Direitos</h2>
-      <div class="grid-2">
-        <div>
-          <h3>Etapas comuns de concursos policiais</h3>
-          <ul>
-            <li>Provas objetivas (Português, Raciocínio Lógico, Informática, Direito, Legislação específica).[web:2][web:8]</li>
-            <li>Provas discursivas ou redação.[web:2][web:8]</li>
-            <li>Teste de Aptidão Física (corrida, flexão, barra, abdominal, natação em alguns concursos).[web:2][web:5]</li>
-            <li>Exames médicos, avaliação psicológica e investigação social.[web:2][web:5][web:8]</li>
-            <li>Curso de formação em academias de polícia, com disciplinas práticas e teóricas.[web:1]</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Benefícios e direitos em geral</h3>
-          <ul>
-            <li>Remuneração inicial variável conforme cargo e estado, com progressão na carreira.[web:1][web:4]</li>
-            <li>Estabilidade após estágio probatório, típicas de cargos efetivos do serviço público.[web:4][web:7]</li>
-            <li>Direitos previdenciários específicos, adicionais de periculosidade e insalubridade em alguns cargos.[web:4][web:7]</li>
-            <li>Licenças, férias, adicionais por tempo de serviço, conforme estatuto da corporação.[web:4][web:7]</li>
-            <li>Possibilidade de especializações e cursos internos.[web:1][web:4]</li>
-          </ul>
+        <div class="badge">Atualizado 2026</div>
+        <h1 class="hero-title">Guia Completo das<br><span class="gradient-text">Carreiras Policiais</span></h1>
+        <p class="hero-subtitle">Todas as informações sobre Polícia Militar, Civil, Federal, PRF, Policial Penal e Perícia. Requisitos, concursos, ENEM, faculdades e muito mais.</p>
+        <div class="hero-buttons">
+          <a href="#carreiras" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> Explorar Carreiras
+          </a>
+          <a href="#interacao" class="btn btn-secondary">
+            <i class="fas fa-comments"></i> Tirar Dúvidas
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- FACULDADES / TECNÓLOGOS / ENEM -->
-    <section id="faculdades" class="section">
-      <h2>Faculdades, Tecnólogos e ENEM</h2>
-      <div class="grid-2">
-        <div>
-          <h3>Formações que ajudam na carreira policial</h3>
-          <ul>
-            <li>Direito (muito útil para Delegado, Polícia Civil, PF e carreiras jurídicas).[web:1][web:10]</li>
-            <li>Segurança Pública e Gestão em Segurança Pública (tecnólogo ou bacharelado).[web:4]</li>
-            <li>Criminologia, Investigação Forense e Perícia Criminal.[web:4]</li>
-            <li>Administração, Contabilidade e TI (úteis em áreas de inteligência e crimes financeiros).[web:1][web:10]</li>
-            <li>Cursos tecnológicos em gestão de serviços jurídicos e notariais, gestão de segurança privada, entre outros.[web:4]</li>
-          </ul>
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/14642359/pexels-photo-14642359.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Polícia em ação">
         </div>
-        <div>
-          <h3>Como o ENEM pode ajudar</h3>
-          <ul>
-            <li>Usar a nota do ENEM para entrar em faculdades públicas (Sisu) ou privadas com bolsa (Prouni) e financiamento (Fies), cursando formações de interesse policial.[web:4]</li>
-            <li>Concluir uma graduação exigida para determinados cargos, como Delegado ou Perito.[web:1][web:8]</li>
-            <li>Melhorar base em disciplinas cobradas em concursos, como Português e Redação.[web:2][web:8]</li>
-          </ul>
-          <p class="note">
-            Obs.: os concursos policiais não usam diretamente a nota do ENEM, mas a graduação conquistada com o ENEM é requisito para vários cargos.[web:1][web:8]
-          </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">+25</div>
+            <div class="stat-label">Carreiras</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+50</div>
+            <div class="stat-label">Bancas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">2026</div>
+            <div class="stat-label">Atualizado</div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="cutoff-box">
-        <h3>Notas de corte (ideia geral)</h3>
-        <p>
-          As notas de corte variam bastante por estado, cargo, banca e número de vagas. Em concursos concorridos, é comum precisar de mais de 80% de acertos para estar entre os primeiros colocados, especialmente em cargos de nível superior.[web:3][web:9]
-        </p>
-        <p>
-          A estratégia é focar em alto desempenho nas disciplinas mais cobradas da banca escolhida (por exemplo, CEBRASPE, FGV, VUNESP).[web:3][web:9]
-        </p>
+  <!-- CARREIRAS -->
+  <section id="carreiras" class="section careers">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Principais Carreiras Policiais</h2>
+        <p class="section-subtitle">Conheça cada uma das principais carreiras policiais no Brasil, suas atribuições e requisitos básicos</p>
       </div>
-    </section>
+      <div class="careers-grid" id="careers-grid">
+        <!-- Cards carregados via JS para animação -->
+      </div>
+    </div>
+  </section>
 
-    <!-- CONCURSOS E BANCAS -->
-    <section id="concursos" class="section section-alt">
-      <h2>Concursos Policiais e Bancas Mais Cobranadas</h2>
-      <div class="grid-2">
-        <div>
-          <h3>Bancas organizadoras mais comuns</h3>
-          <ul>
-            <li>CEBRASPE (antigo CESPE) – muito presente em concursos da PF, PRF e polícias civis.[web:9]</li>
-            <li>FGV – organiza concursos de PMs e polícias civis em vários estados.[web:3][web:6][web:9]</li>
-            <li>VUNESP – forte em concursos de Polícia Civil e PM em São Paulo.[web:9]</li>
-            <li>Outras: IBFC, AOCP, Fundação Carlos Chagas, Fundação Aroeira, entre outras.[web:3][web:9]</li>
-          </ul>
+  <!-- INGRESSO -->
+  <section id="ingresso" class="section ingress">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Como Ingressar</h2>
+        <p class="section-subtitle">Etapas, requisitos e benefícios de cada carreira policial</p>
+      </div>
+      <div class="ingress-content">
+        <div class="ingress-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Provas Objetivas</h4>
+              <p>Português, Raciocínio Lógico, Informática, Direitos e Legislação</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Teste de Aptidão Física</h4>
+              <p>Corrida, flexões, barra, abdominal e natação</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Exames Médicos e Psicológicos</h4>
+              <p>Avaliação completa de saúde e aptidão mental</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Curso de Formação</h4>
+              <p>Academia de polícia com treinamento prático</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>Dicas para acompanhar editais</h3>
-          <ul>
-            <li>Acompanhar sites oficiais das polícias (PM, PC, PF, PRF, Policial Penal) e Diários Oficiais.[web:5][web:7]</li>
-            <li>Seguir plataformas especializadas em concursos, que atualizam sobre banca definida e previsão de edital.[web:3][web:10]</li>
-            <li>Montar um cronograma de estudos contínuo, pois muitos concursos abrem com prazos curtos.[web:10]</li>
-          </ul>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h4>Salários Iniciais</h4>
+            <p>R$ 5.000 a R$ 15.000+ dependendo do cargo e estado</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-shield-check"></i>
+            <h4>Estabilidade</h4>
+            <p>Após 3 anos de estágio probatório</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-heartbeat"></i>
+            <h4>Benefícios</h4>
+            <p>Adicional de periculosidade, insalubridade, plano de saúde</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- COMENTÁRIOS -->
-    <section id="comentarios" class="section">
-      <h2>Deixe seu comentário</h2>
-      <p>Compartilhe sua experiência, dúvidas ou objetivos na área policial. Seu comentário aparecerá abaixo.</p>
-
-      <form id="comment-form" class="form">
-        <div class="form-group">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" required placeholder="Seu nome" />
-        </div>
-        <div class="form-group">
-          <label for="carreira">Carreira de interesse</label>
-          <select id="carreira">
-            <option value="Geral">Geral</option>
-            <option value="Polícia Militar">Polícia Militar</option>
-            <option value="Polícia Civil">Polícia Civil</option>
-            <option value="Polícia Federal">Polícia Federal</option>
-            <option value="PRF">PRF</option>
-            <option value="Policial Penal">Policial Penal</option>
-            <option value="Perícia Oficial">Perícia Oficial</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="mensagem">Comentário</label>
-          <textarea id="mensagem" rows="4" required placeholder="Escreva aqui..."></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Enviar comentário</button>
-      </form>
-
-      <div class="comments-list" id="comments-list">
-        <!-- Comentários renderizados via JavaScript -->
+  <!-- FACULDADES -->
+  <section id="faculdades" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <p class="section-subtitle">Graduações, tecnólogos e como o ENEM ajuda na carreira policial</p>
       </div>
-    </section>
-
-    <!-- DÚVIDAS (PERGUNTAS E RESPOSTAS) -->
-    <section id="faq" class="section section-alt">
-      <h2>Perguntas e Dúvidas</h2>
-      <p>Envie sua pergunta; ela ficará registrada com as respostas, como um mini fórum.</p>
-
-      <form id="question-form" class="form">
-        <div class="form-group">
-          <label for="pergunta">Sua pergunta</label>
-          <textarea id="pergunta" rows="3" required placeholder="Ex: Qual a altura mínima para entrar na PM?"></textarea>
+      <div class="faculdades-grid">
+        <div class="faculdade-card">
+          <h4><i class="fas fa-gavel"></i> Direito</h4>
+          <p>Essencial para Delegado e carreiras jurídicas</p>
         </div>
-        <button type="submit" class="btn-secondary">Enviar pergunta</button>
-      </form>
-
-      <div id="questions-list" class="questions-list">
-        <!-- Perguntas e respostas via JavaScript -->
+        <div class="faculdade-card">
+          <h4><i class="fas fa-brain"></i> Segurança Pública</h4>
+          <p>Tecnólogo ou Bacharelado - mais procurado</p>
+        </div>
+        <div class="faculdade-card">
+          <h4><i class="fas fa-dna"></i> Perícia Criminal</h4>
+          <p>Para Peritos e Investigadores Científicos</p>
+        </div>
+        <div class="faculdade-card">
+          <h4><i class="fas fa-laptop"></i> Informática</h4>
+          <p>Crimes cibernéticos e inteligência</p>
+        </div>
       </div>
-    </section>
-  </main>
+      <div class="enem-box">
+        <h4><i class="fas fa-chart-line"></i> ENEM na Carreira Policial</h4>
+        <p>Use a nota do ENEM no Sisu/Prouni para graduações exigidas nos concursos. Notas de corte em faculdades públicas variam de 650 a 800 pontos dependendo do curso e estado.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- CONCURSOS -->
+  <section id="concursos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Concursos e Bancas</h2>
+        <p class="section-subtitle">Principais bancas organizadoras e como se preparar</p>
+      </div>
+      <div class="bancas-grid">
+        <div class="banca-card">
+          <div class="banca-logo cebraspe">Cebraspe</div>
+          <p>PF, PRF, PC-DF, PC-GO</p>
+        </div>
+        <div class="banca-card">
+          <div class="banca-logo fgv">FGV</div>
+          <p>PM-SP, PC-RJ, PM-MG</p>
+        </div>
+        <div class="banca-card">
+          <div class="banca-logo vunesp">Vunesp</div>
+          <p>PC-SP, PM-SP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERAÇÃO -->
+  <section id="interacao" class="section interaction">
+    <div class="container">
+      <div class="interaction-tabs">
+        <button class="tab-btn active" data-tab="comments">
+          <i class="fas fa-comments"></i> Comentários
+        </button>
+        <button class="tab-btn" data-tab="questions">
+          <i class="fas fa-question-circle"></i> Dúvidas
+        </button>
+      </div>
+      
+      <!-- COMENTÁRIOS -->
+      <div id="comments-tab" class="tab-content active">
+        <form id="comment-form" class="interaction-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-user"></i> Nome</label>
+              <input type="text" id="nome" required>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-tag"></i> Carreira</label>
+              <select id="carreira">
+                <option value="Geral">Geral</option>
+                <option value="PM">Polícia Militar</option>
+                <option value="PC">Polícia Civil</option>
+                <option value="PF">Polícia Federal</option>
+                <option value="PRF">PRF</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-comment"></i> Seu comentário</label>
+            <textarea id="mensagem" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Publicar
+          </button>
+        </form>
+        <div id="comments-list" class="comments-container"></div>
+      </div>
+
+      <!-- DÚVIDAS -->
+      <div id="questions-tab" class="tab-content">
+        <form id="question-form" class="interaction-form">
+          <div class="form-group">
+            <label><i class="fas fa-question"></i> Sua dúvida</label>
+            <textarea id="pergunta" rows="3" required placeholder="Ex: Qual a altura mínima para PM?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Enviar
+          </button>
+        </form>
+        <div id="questions-list" class="comments-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>Guia das Carreiras Policiais • Conteúdo informativo, consulte sempre os editais oficiais para regras atualizadas.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-shield-alt"></i>
+          <span>Guia Policial</span>
+        </div>
+        <p>© 2026 - Conteúdo informativo. Consulte sempre editais oficiais.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
